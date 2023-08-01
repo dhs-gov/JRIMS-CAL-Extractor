@@ -10,6 +10,12 @@ def extract_numbers(pdf_file):
         for page in range(pdf_reader.numPages):
             text += pdf_reader.getPage(page).extract_text()
 
+        numbers = re.findall(r'\b\d{1,2}\.\d{1,2}\.\d{1,2}(?:\.\d{1,2})?\b', text)
+
+        if not numbers:
+            print("No such values.")
+            return
+
         return numbers
 
 numbers = extract_numbers('file.pdf')
