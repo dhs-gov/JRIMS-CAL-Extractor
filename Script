@@ -1,0 +1,18 @@
+import re
+import PyPDF2
+
+def extract_numbers(pdf_file):
+    with open(pdf_file, 'rb') as file:
+        pdf_reader = PyPDF2.PdfFileReader(file)
+
+        text = ""
+
+        for page in range(pdf_reader.numPages):
+            text += pdf_reader.getPage(page).extract_text()
+
+        return numbers
+
+numbers = extract_numbers('file.pdf')
+
+for number in numbers:
+    print(number)
