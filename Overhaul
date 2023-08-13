@@ -1,27 +1,35 @@
 import re
+import PyPDF2
 import pandas as pd
 
-def extract_numbers(excel_file, number_column, description_column):
+def extract_numbers_from_pdf(pdf_file):
+    with open(pdf_file, 'rb') as file:
+        pdf_reader = PyPDF2.PdfReader(file)
+
+        text = ""
+
+        for page in pdf_reader.pages:
+            text += page.extract_text()
+
+        numbers = re.findall(r'\b\d{1,2}\.\d{1,2}\.\d{1,2}(?:\.\d{1,2})?\b', text)
+        unique_numbers = set(numbers)
+
+        return unique_numbers
+
+def extract_matching_values_from_excel(excel_file, number_column, description_column, pdf_numbers):
     df = pd.read_excel(excel_file, engine='openpyxl')
 
-    number_data = df[number_column]
-    description_data = df[description_column]
+    for idx, excel_number in enumerate(df[number_column]):
+        if excel_number in pdf_numbers:
+            print(excel_number, "-", df[description_column][idx])
 
-    number_description_pairs = set()
+pdf_file = 'FILE.pdf'  # Replace with PDF file's name
+excel_file = 'FILE.xlsx'  # Replace with Excel file's name
+number_column = 'Number_Column'  # Replace with number column's name
+description_column = 'Description_Column'  # Replace with description column's name
 
-    for idx, value in enumerate(number_data):
-        matches = re.findall(r'\b\d{1,2}\.\d{1,2}\.\d{1,2}(?:\.\d{1,2})?\b', str(value))
-        for match in matches:
-            number_description_pairs.add((match, description_data[idx]))
-
-    if not number_description_pairs:
-        print("No such values.")
-        return
-
-    return number_description_pairs
-
-number_description_pairs = extract_numbers('FILE.xlsx', 'Number_Column', 'Description_Column')
-
-if number_description_pairs:
-    for number, description in number_description_pairs:
-        print(number, "-", description)
+pdf_numbers = extract_numbers_from_pdf(pdf_file)
+if not pdf_numbers:
+    print("No such values.")
+else:
+    extract_matching_values_from_excel(excel_file, number_column, description_column, pdf_numbers)
