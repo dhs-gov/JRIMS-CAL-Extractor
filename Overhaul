@@ -17,7 +17,7 @@ def extract_numbers_from_pdf(pdf_file):
         return unique_numbers
 
 def extract_matching_values_from_excel(excel_file, number_column, description_column, pdf_numbers):
-    df = pd.read_excel(excel_file, engine='openpyxl')
+    df = pd.read_excel(excel_file, sheet_name='1-cal', engine='openpyxl')
 
     for idx, excel_number in enumerate(df[number_column]):
         if excel_number in pdf_numbers:
