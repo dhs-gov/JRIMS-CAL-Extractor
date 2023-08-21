@@ -6,6 +6,7 @@ Notes to Self:
 4. Replace the "file" name inside extract_numbers function.
 5. Don't stop believing!
 
-Future Areas of Improvement
+
+Future Areas of Improvement:
 1. Prevent confusion with Table of Contents values
 --> Could skip pages with abnormal amount of qualifying values on it as a solution
