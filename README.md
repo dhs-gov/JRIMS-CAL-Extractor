@@ -8,5 +8,5 @@ Notes to Self:
 
 
 Future Areas of Improvement:
-1. Prevent confusion with Table of Contents values
---> Could skip pages with abnormal amount of qualifying values on it as a solution
+- Prevent confusion with Table of Contents values
+  - Could skip pages with abnormal amount of qualifying values on it as a solution
