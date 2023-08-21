@@ -1,3 +1,6 @@
+## Filtered outputs to ensure no matching CAL values were outputted. 
+## Used openpyxl to refer to the official list of CAL alignment values (extracted from Mobius) to increase extraction accuracy.
+
 import re
 import PyPDF2
 import pandas as pd
