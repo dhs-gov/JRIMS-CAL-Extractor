@@ -1,3 +1,5 @@
+## Quality of life changes, such as fixing a bug where "No such values" was not outputted as expected.
+
 import re
 import PyPDF2
 import pandas as pd
