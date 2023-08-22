@@ -1,12 +1,14 @@
 # JRIMS CAL Extractor
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3114/)
 
-Something that identifies what it is, why it exists, how to use it, and next steps for its development.
-## Synopsis of Issue
+## Code Synopsis
+The JRIMS CAL Extractor is a Python script created in Visual Studio Code using the PyPDF2 and Openpyxl libraries to automate extraction of CAL alignments values from pre-existing JRIMS documents. 
 
 ## Purpose of the JRIMS CAL Extractor
+One of the gaps in DHS's ability to properly assess the impacts of new JRIMS documents is in identifying potential overlap with capability needs identified in previous JRIMS documents. To address this issue, CAL alignment values must be efficiently extracted from these aforementioned documents. Although initial attempts involved manual extraction of the data, the need to expedite the process soon became apparent. With 700+ JRIMS documents left to extract capability data from, this Python-based solution that automated CAL extraction was created by a CTOD intern.
 
 ## How to Use
+
 
 ## Next Steps for Development
 
