@@ -8,9 +8,17 @@ The JRIMS CAL Extractor is a Python script created in Visual Studio Code using t
 One of the gaps in DHS's ability to properly assess the impacts of new JRIMS documents is in identifying potential overlap with capability needs identified in previous JRIMS documents. To address this issue, CAL alignment values must be efficiently extracted from these aforementioned documents. Although initial attempts involved manual extraction of the data, the need to expedite the process soon became apparent. With 700+ JRIMS documents left to extract capability data from, this Python-based solution that automated CAL extraction was created by a CTOD intern.
 
 ## How to Use
-
+1. d
+2. f
+3. f
+4. f
+5. f
+6. f
+7. f
+8. f
 
 ## Next Steps for Development
+Before widespread usage, the Python script must address an area of concern presented in its output accuracy and also adopt necessary changes to allow outputs to be automatically stored on a separate database for further analysis.  
 
 Notes to Self:
 1. Make sure to click the PATH option when reinstalling Python.
