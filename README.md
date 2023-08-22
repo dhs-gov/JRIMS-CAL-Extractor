@@ -24,12 +24,13 @@ Above: The Python script, CAL Alignments Excel file and three JRIMS documents ar
 ![image](https://github.com/justin-2028/JRIMS-CAL-Extractor/assets/96811261/04bbd6e7-5899-4ee0-9aaf-202f7d514409)
 Above: Revised code containing the details needed for the scanning process of three JRIMS documents.
 
-### 3. f
-### 4. f
-### 5. f
-### 6. f
-### 7. f
-### 8. f
+### 3. After saving the revised Python file, open the Anaconda Command Prompt. Change the directory using the "cd" command to the location of the aforementioned files. <br /><br />
+![image](https://github.com/justin-2028/JRIMS-CAL-Extractor/assets/96811261/8b725f8c-4534-461c-8198-76d5d3322e4b)
+Above: Anaconda Command Prompt in action.
+
+### 4. Finally, run the command "python [file name].py" to extract the CAL alignment values for each JRIMS document. <br /><br />
+![image](https://github.com/justin-2028/JRIMS-CAL-Extractor/assets/96811261/900f82b2-e6ee-4e04-b944-34a09b047550)
+Above: CAL alignment values and their corresponding descriptions are outputted per file. Data is censored due to sensitive nature.
 
 ## Next Steps for Development
 Before widespread usage, the Python script must address an area of concern presented in its output accuracy and also adopt necessary changes to allow outputs to be automatically stored on a separate database for further analysis.  
