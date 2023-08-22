@@ -35,14 +35,7 @@ Above: CAL alignment values and their corresponding descriptions are outputted p
 ## Next Steps for Development
 Before widespread usage, the Python script must address an area of concern presented in its output accuracy and also adopt necessary changes to allow outputs to be automatically stored on a separate database for further analysis.  
 
-Notes to Self:
-1. Make sure to click the PATH option when reinstalling Python.
-2. The saved folder for VSC will be where the PDF documents have to be.
-3. Look out for deprecation issues with PyPDF2.
-4. Replace the "file" name inside extract_numbers function.
-5. Don't stop believing!
-
-
-Future Areas of Improvement:
-- Prevent confusion with Table of Contents values
-  - Could skip pages with abnormal amount of qualifying values on it as a solution
+###1. Preventing confusion with "Table of Contents" values
+The Python script looks for series of four numbers (separated by periods) with similar configurations as CAL alignment values. However, "Table of Contents" values may sometimes qualify under the criteria of the code and be unintentionally outputted. Although the script cross-references an Excel file with official CAL values, there is still a considerable margin of error that must be reduced. A potential idea is to exclude pages with excessive values from the scan to mitigate the "Table of Contents" issue. 
+###2. Options to transfer outputs to a database for real-time analysis 
+Storing the outputs into databases such as Mobius is the end goal of this automation project, but is by far the most important future objective. If achieved, the potential visualizations that could be created out of the stored data would be incredibly valuable to DHS.
