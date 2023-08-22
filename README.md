@@ -12,10 +12,18 @@ Throughout these instructions, Anaconda Navigator will be used due to its compat
 ![image](https://github.com/justin-2028/JRIMS-CAL-Extractor/assets/96811261/d0ba5988-0d09-407a-98aa-9423d1421e80)
 Above: Several packages available through the Anaconda Navigator.
 
-### 1. Download the latest version of the JRIMS CAL Extractor and store them in the same file directory as the JRIMS PDF documents that require scanning.
+### 1. Download the latest version of the JRIMS CAL Extractor and store them in the same file directory as the JRIMS PDF documents that require scanning. If available, store an Excel file of official CAL alignment values in this directory as well. <br /><br />
+![image](https://github.com/justin-2028/JRIMS-CAL-Extractor/assets/96811261/7613edae-8036-4aff-9208-c903f4eb71ed)
+Above: The Python script, CAL Alignments Excel file and three JRIMS documents are stored in the same directory.
 
+### 2. Open the Python file in Visual Studio Code and provide the following information:
+##### •	Name of the Excel file <br />
+##### •	Column containing CAL alignment values in the Excel file <br />
+##### •	Column containing CAL alignment descriptions in the Excel file <br />
+##### •	Name(s) of the JRIMS documents that will be scanned <br /><br />
+![image](https://github.com/justin-2028/JRIMS-CAL-Extractor/assets/96811261/04bbd6e7-5899-4ee0-9aaf-202f7d514409)
+Above: Revised code containing the details needed for the scanning process of three JRIMS documents.
 
-### 2. f
 ### 3. f
 ### 4. f
 ### 5. f
