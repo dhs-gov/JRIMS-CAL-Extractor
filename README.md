@@ -24,7 +24,7 @@ Above: The Python script, CAL Alignments Excel file and three JRIMS documents ar
 ![image](https://github.com/justin-2028/JRIMS-CAL-Extractor/assets/96811261/04bbd6e7-5899-4ee0-9aaf-202f7d514409)
 Above: Revised code containing the details needed for the scanning process of three JRIMS documents.
 
-### 3. After saving the revised Python file, open the Anaconda Command Prompt. Change the directory using the "cd" command to the location of the aforementioned files. <br /><br />
+### 3. After saving the revised Python file, open the Anaconda Command Prompt. Change the directory using the "cd" command to the location of the files. <br /><br />
 ![image](https://github.com/justin-2028/JRIMS-CAL-Extractor/assets/96811261/8b725f8c-4534-461c-8198-76d5d3322e4b)
 Above: Anaconda Command Prompt in action.
 
@@ -38,4 +38,4 @@ Before widespread usage, the Python script must address an area of concern prese
 ### 1. Preventing confusion with "Table of Contents" values
 The Python script looks for series of four numbers (separated by periods) with similar configurations as CAL alignment values. However, "Table of Contents" values may sometimes qualify under the criteria of the code and be unintentionally outputted. Although the script cross-references an Excel file with official CAL values, there is still a considerable margin of error that must be reduced. A potential idea is to exclude pages with excessive values from the scan to mitigate the "Table of Contents" issue. 
 ### 2. Options to transfer outputs to a database for real-time analysis 
-Storing the outputs into databases such as Mobius is the end goal of this automation project, but is by far the most important future objective. If achieved, the potential visualizations that could be created out of the stored data would be incredibly valuable to DHS.
+Storing the outputs into databases such as Mobius is the end goal of this automation project but is by far the most important future objective. If achieved, the potential visualizations that could be created out of the stored data would be incredibly valuable to DHS.
